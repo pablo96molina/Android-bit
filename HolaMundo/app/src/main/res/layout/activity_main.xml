@@ -24,7 +24,16 @@
         android:layout_height="55dp"
         android:text="@string/boton"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="263dp" />"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="490dp" />"
     app:layout_constraintEnd_toEndOf="parent"
     tools:layout_editor_absoluteY="72dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
