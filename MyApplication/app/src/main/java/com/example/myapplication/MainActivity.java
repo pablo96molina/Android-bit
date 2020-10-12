@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    initializeData();
-    initializeAdapter();
+
 
 
     private void initializeData() {
@@ -39,11 +38,15 @@ public class MainActivity extends AppCompatActivity {
         contactos.add(new Contacto(R.drawable.descarga2,"Guau", "6", ));
         contactos.add(new Contacto(R.drawable.descarga3,"Oliver", "6", ));
         contactos.add(new Contacto(R.drawable.descarga4,"Alex", "6", ));
-
+        initializeData();
     }
 
     private void initializeAdapter() {
         ContactoAdaptador adapter = new ContactoAdaptador((ArrayList<Contacto>) contactos);
         rv.setAdapter(adapter);
+        initializeAdapter();
     }
+
+
+
 }
